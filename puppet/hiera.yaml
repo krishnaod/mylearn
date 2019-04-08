@@ -1,0 +1,10 @@
+---
+# Hiera 5 Global configuration file
+
+version: 5
+defaults:
+  datadir: "/etc/puppetlabs/code/environments/%{environment}/hieradata"
+  data_hash: yaml_data 
+hierarchy:
+  - name: "Common data"
+    path: "common.yaml"
